@@ -19,8 +19,11 @@ vim.keymap.set("n", "<leader>gc", "<cmd>GitBlameCopySHA<CR>", { desc = "Copy Git
 	-- Copy commit URL (if remote origin is set, e.g. GitHub)
 vim.keymap.set("n", "<leader>gu", "<cmd>GitBlameCopyCommitURL<CR>", { desc = "Copy Git Blame URL" })
 
+	-- Copy file URL (current file at current line)
+vim.keymap.set("n", "<leader>gU", "<cmd>GitBlameCopyFileURL<CR>", { desc = "Copy File URL" })
+
 	-- Open commit in browser (GitHub/GitLab/etc.)
-vim.keymap.set("n", "<leader>go", "<cmd>GitBlameOpenCommitURL<CR>", { desc = "Open Commit in Browser" })
+vim.keymap.set("n", "<leader>go", "<cmd>GitBlameOpenFileURL<CR>", { desc = "Open File in Browser" })
 
 
 -- Switching themes keymaps
