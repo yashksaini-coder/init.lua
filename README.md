@@ -20,7 +20,9 @@ Built while learning Neovim on **Windows 11 terminal**, using [lazy.nvim](https:
   | `<leader>ct` | Theme | Switch to **Chai** theme   |
   | `<leader>tt` | Theme | Switch to **TokyoNight**   |
   | `<leader>sk` | ShowKeys | Show key mappings   |
-
+  | `<leader><Esc>`      | Normal  | Clear search highlights (`:nohlsearch`)                                 |
+  | `<C-c>`              | Visual  | Copy selected text to system clipboard (uses `wl-copy`)                 |
+  | `"+y` / `"+p`        | Any     | Yank/Paste to system clipboard (enabled via `unnamedplus`)              |
 
   ### Git Blame
 
@@ -72,15 +74,22 @@ Built while learning Neovim on **Windows 11 terminal**, using [lazy.nvim](https:
 ```markdown
 
 %LOCALAPPDATA%/nvim/
-├── init.lua                 # Entry point (loads lua/yashksaini-coder/init.lua)
-├── lazy-lock.json           # Lazy.nvim lockfile for plugin versions
+├── init.lua -- Entry point (loads lua/yashksaini-coder/init.lua)
+├── lazy-lock.json -- Lazy.nvim lockfile for plugin versions
 ├── lua/
 │   └── yashksaini-coder/
-│       ├── init.lua         # Main config (requires lazy.lua, remap.lua, etc.)
-│       ├── lazy.lua         # Plugin manager setup (lazy.nvim)
+│       ├── init.lua -- Main config (requires lazy.lua, remap.lua, etc.)
+│       ├── lazy.lua -- Lazy.nvim setup (lazy.nvim)
+│       ├── options.lua -- Options setup (options.nvim)
 │       ├── plugins/
-│       │   └── colorscheme.lua  # Theme setup (Tokyonight)
-│       └── remap.lua        # Key mappings
+│       │   ├── chai.lua -- Chai.nvim setup (chai.nvim)
+│       │   ├── colorscheme.lua   -- Theme setup (Tokyonight)
+│       │   ├── dashboard.lua   -- Dashboard setup (alpha-nvim)
+│       │   ├── lualine.lua   -- Statusline setup (lualine.nvim)
+│       │   ├── mini.lua      -- Mini.nvim setup (mini.nvim)
+│       │   ├── showkeys.lua  -- Showkeys.nvim setup (showkeys.nvim)
+│       │   └── treesitter.lua -- Treesitter setup (nvim-treesitter)
+│       └── remap.lua -- Remap.nvim setup (remap.nvim)
 └── README.md
 
 ```
