@@ -16,13 +16,15 @@ Built while learning Neovim on **Windows 11 terminal**, using [lazy.nvim](https:
   
   | Mapping     | Category | Description                           |
   | ----------- | ---- | ------------------------------------- |
+  | `<leader>` | Utility | Press Space to open all commands options using which-key |
   | `<leader>ex` | File Explorer | Open file explorer (netrw by default) |
   | `<leader>ct` | Theme | Switch to **Chai** theme   |
   | `<leader>tt` | Theme | Switch to **TokyoNight**   |
   | `<leader>sk` | ShowKeys | Show key mappings   |
-  | `<leader><Esc>`      | Normal  | Clear search highlights (`:nohlsearch`)                                 |
-  | `<C-c>`              | Visual  | Copy selected text to system clipboard (uses `wl-copy`)                 |
-  | `"+y` / `"+p`        | Any     | Yank/Paste to system clipboard (enabled via `unnamedplus`)              |
+  | `<leader><Esc>` | Normal | Clear search highlights (`:nohlsearch`) |
+  | `<C-c>` | Visual | Copy selected text to system clipboard (uses `wl-copy`) |
+  | `"+y` / `"+p` | Any | Yank/Paste to system clipboard (enabled via `unnamedplus`) |
+
 
   ### Git Blame
 
