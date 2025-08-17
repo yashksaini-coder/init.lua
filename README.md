@@ -9,25 +9,39 @@ Built while learning Neovim on **Windows 11 terminal**, using [lazy.nvim](https:
 
 ---
   ## ⌨️ Key Mappings
-  
+
   Leader key: **`<Space>`**
   
   ### Custom
   
-  | Mapping     | Mode | Description                           |
+  | Mapping     | Category | Description                           |
   | ----------- | ---- | ------------------------------------- |
-  | `<Space>ex` | `n`  | Open file explorer (netrw by default) |
-  
+  | `<leader>ex` | File Explorer | Open file explorer (netrw by default) |
+  | `<leader>ct` | Theme | Switch to **Chai** theme   |
+  | `<leader>tt` | Theme | Switch to **TokyoNight**   |
+
+
+  ### Git Blame
+
+  | Mapping     | Command | Description                           |
+  | ----------- | ---- | ------------------------------------- |
+  | `<leader>gb` | `:GitBlameToggle`        | Toggle blame on/off (show/hide blame info)   |
+  | `<leader>gi` | `:GitBlameEnable`        | Enable blame annotations                     |
+  | `<leader>gd` | `:GitBlameDisable`       | Disable blame annotations                    |
+  | `<leader>gc` | `:GitBlameCopySHA`       | Copy the commit SHA of the current line      |
+  | `<leader>gu` | `:GitBlameCopyCommitURL` | Copy the commit URL (if repo has remote)     |
+  | `<leader>go` | `:GitBlameOpenCommitURL` | Open commit in browser (GitHub/GitLab, etc.) |
+
   ### Lazy.nvim Shortcuts
   
   | Mapping     | Command         | Description                  |
   | ----------- | --------------- | ---------------------------- |
-  | `<Space>ll` | `:Lazy`         | Open Lazy UI                 |
-  | `<Space>ls` | `:Lazy sync`    | Sync (install/update/remove) |
-  | `<Space>lu` | `:Lazy update`  | Update all plugins           |
-  | `<Space>li` | `:Lazy install` | Install missing plugins      |
-  | `<Space>lc` | `:Lazy check`   | Check plugin health          |
-  | `<Space>lx` | `:Lazy clean`   | Remove unused plugins        |
+  | `<leader>ll` | `:Lazy`         | Open Lazy UI                 |
+  | `<leader>ls` | `:Lazy sync`    | Sync (install/update/remove) |
+  | `<leader>lu` | `:Lazy update`  | Update all plugins           |
+  | `<leader>li` | `:Lazy install` | Install missing plugins      |
+  | `<leader>lc` | `:Lazy check`   | Check plugin health          |
+  | `<leader>lx` | `:Lazy clean`   | Remove unused plugins        |
   
   ## 🛠️ Commands & Keymaps
   
@@ -35,7 +49,7 @@ Built while learning Neovim on **Windows 11 terminal**, using [lazy.nvim](https:
   
   | Key / CMD       | Purpose                                   |
   |-----------------|-------------------------------------------|
-  | `space ex`      | Open **explorer tab** from file level     |
+  | `<leader>ex`      | Open **explorer tab** from file level     |
   | `f` (Dashboard) | 🔍 Find file using Telescope              |
   | `r` (Dashboard) | 📂 Open recent files                      |
   | `n` (Dashboard) | ➕ Create a new empty buffer               |
@@ -72,24 +86,17 @@ Built while learning Neovim on **Windows 11 terminal**, using [lazy.nvim](https:
 
 ---
 
-## 🎨 Themes
+### 📊 Statusline (lualine.nvim)
+- **Always visible at the bottom**  
+- Shows:
+  - Mode, branch, diagnostics  
+  - Filename + relative path  
+  - Encoding / fileformat / filetype  
+  - Progress + location  
 
-Currently using **[Tokyonight.nvim](https://github.com/folke/tokyonight.nvim)**.
-
-Available styles:
-- `night` 🌙 (default)
-- `storm` ⛈️
-- `moon` 🌑
-- `day` ☀️
-
-You can change the style inside `colorscheme.lua`:
-
-```lua
-opts = {
-  style = "storm", -- "night" | "moon" | "day"
-  transparent = false,
-}
-```
+**Extra Integrations:**
+- 📜 **Git Blame** → shows who last modified the current line.  
+- ✍️ **Word Count + Reading Time** → shown for Markdown / text files.  
 
 ---
 
