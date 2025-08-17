@@ -9,5 +9,5 @@ My simple yet minimal lua config for Neovim.
 
 |  CMD  |     Purpose       |
 |-------|-------------------|
-|<space>ex|To open explorer tab from file level|
+|"<space>ex"|To open explorer tab from file level|
 
