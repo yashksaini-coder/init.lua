@@ -34,6 +34,8 @@ Built while learning Neovim on **Windows 11 terminal**, using [lazy.nvim](https:
   | `<leader>gc` | `:GitBlameCopySHA`       | Copy the commit SHA of the current line      |
   | `<leader>gu` | `:GitBlameCopyCommitURL` | Copy the commit URL (if repo has remote)     |
   | `<leader>go` | `:GitBlameOpenCommitURL` | Open commit in browser (GitHub/GitLab, etc.) |
+  | `<leader>gU` | `:GitBlameCopyFileURL` | Copy file URL (current file at current line) |
+
 
   ### Lazy.nvim Shortcuts
   
