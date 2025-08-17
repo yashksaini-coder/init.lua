@@ -26,16 +26,13 @@ Built while learning Neovim on **Windows 11 terminal**, using [lazy.nvim](https:
 
   ### Git Blame
 
-  | Mapping     | Command | Description                           |
-  | ----------- | ---- | ------------------------------------- |
-  | `<leader>gb` | `:GitBlameToggle`        | Toggle blame on/off (show/hide blame info)   |
-  | `<leader>gi` | `:GitBlameEnable`        | Enable blame annotations                     |
-  | `<leader>gd` | `:GitBlameDisable`       | Disable blame annotations                    |
-  | `<leader>gc` | `:GitBlameCopySHA`       | Copy the commit SHA of the current line      |
-  | `<leader>gu` | `:GitBlameCopyCommitURL` | Copy the commit URL (if repo has remote)     |
-  | `<leader>go` | `:GitBlameOpenCommitURL` | Open commit in browser (GitHub/GitLab, etc.) |
-  | `<leader>gU` | `:GitBlameCopyFileURL` | Copy file URL (current file at current line) |
-
+  | Mapping      | Command                    | Description                                 |
+  | ------------ | ------------------------- | ------------------------------------------- |
+  | `<leader>gb` | `:GitBlameToggle`         | Toggle blame on/off (show/hide blame info)  |
+  | `<leader>gc` | `:GitBlameCopySHA`        | Copy the commit SHA of the current line     |
+  | `<leader>gu` | `:GitBlameCopyCommitURL`  | Copy the commit URL (if repo has remote)    |
+  | `<leader>gU` | `:GitBlameCopyFileURL`    | Copy file URL (current file at current line)|
+  | `<leader>go` | `:GitBlameOpenFileURL`    | Open file in browser (GitHub/GitLab, etc.)  |
 
   ### Lazy.nvim Shortcuts
   
