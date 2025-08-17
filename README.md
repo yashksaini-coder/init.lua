@@ -8,6 +8,49 @@ Built while learning Neovim on **Windows 11 terminal**, using [lazy.nvim](https:
 > Use at your own choice 🚀
 
 ---
+  ## ⌨️ Key Mappings
+  
+  Leader key: **`<Space>`**
+  
+  ### Custom
+  
+  | Mapping     | Mode | Description                           |
+  | ----------- | ---- | ------------------------------------- |
+  | `<Space>ex` | `n`  | Open file explorer (netrw by default) |
+  
+  ### Lazy.nvim Shortcuts
+  
+  | Mapping     | Command         | Description                  |
+  | ----------- | --------------- | ---------------------------- |
+  | `<Space>ll` | `:Lazy`         | Open Lazy UI                 |
+  | `<Space>ls` | `:Lazy sync`    | Sync (install/update/remove) |
+  | `<Space>lu` | `:Lazy update`  | Update all plugins           |
+  | `<Space>li` | `:Lazy install` | Install missing plugins      |
+  | `<Space>lc` | `:Lazy check`   | Check plugin health          |
+  | `<Space>lx` | `:Lazy clean`   | Remove unused plugins        |
+  
+  ## 🛠️ Commands & Keymaps
+  
+  Here are the custom commands and key mappings I use inside Neovim.
+  
+  | Key / CMD       | Purpose                                   |
+  |-----------------|-------------------------------------------|
+  | `space ex`      | Open **explorer tab** from file level     |
+  | `f` (Dashboard) | 🔍 Find file using Telescope              |
+  | `r` (Dashboard) | 📂 Open recent files                      |
+  | `n` (Dashboard) | ➕ Create a new empty buffer               |
+  | `p` (Dashboard) | 🗂️ Open projects list (Telescope projects)|
+  | `l` (Dashboard) | ⚡ Open Lazy plugin manager               |
+  | `u` (Dashboard) | ⬆️ Update all plugins (Lazy update)       |
+  | `q` (Dashboard) | 🚪 Quit Neovim                            |
+  
+  ### Plugin Shortcuts
+  - `:Alpha` → Reload dashboard screen
+  - `:Lazy` → Open Lazy plugin manager
+  - `:Lazy update` → Update all installed plugins
+  - `:Telescope find_files` → Search files
+  - `:Telescope oldfiles` → Open recent files
+  - `:Telescope projects` → Browse projects (requires `telescope-projects`)
 
 ## 📂 Directory Structure
 
@@ -43,51 +86,10 @@ You can change the style inside `colorscheme.lua`:
 
 ```lua
 opts = {
-  style = "night", -- "storm" | "moon" | "day"
+  style = "storm", -- "night" | "moon" | "day"
   transparent = false,
 }
 ```
-
----
-
-## 🔌 Plugins (managed with lazy.nvim)
-
-This config uses [lazy.nvim](https://github.com/folke/lazy.nvim) as the plugin manager.
-
-### Installed
-
-* **lazy.nvim** → plugin manager
-* **tokyonight.nvim** → colorscheme
-
-### Coming soon
-
-* File explorer
-* Statusline
-* Treesitter
-* LSP setup
-
----
-
-## ⌨️ Key Mappings
-
-Leader key: **`<Space>`**
-
-### Custom
-
-| Mapping     | Mode | Description                           |
-| ----------- | ---- | ------------------------------------- |
-| `<Space>ex` | `n`  | Open file explorer (netrw by default) |
-
-### Lazy.nvim Shortcuts
-
-| Mapping     | Command         | Description                  |
-| ----------- | --------------- | ---------------------------- |
-| `<Space>ll` | `:Lazy`         | Open Lazy UI                 |
-| `<Space>ls` | `:Lazy sync`    | Sync (install/update/remove) |
-| `<Space>lu` | `:Lazy update`  | Update all plugins           |
-| `<Space>li` | `:Lazy install` | Install missing plugins      |
-| `<Space>lc` | `:Lazy check`   | Check plugin health          |
-| `<Space>lx` | `:Lazy clean`   | Remove unused plugins        |
 
 ---
 

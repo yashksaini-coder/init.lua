@@ -32,7 +32,7 @@ return {
 
     -- Footer
     dashboard.section.footer.val = {
-      "⚡ Arch/Nix Vibes | TokyoNight Theme | Cyberpunk Edition ⚡",
+      "⚡Wake, code, break, repeat — the loop that ships dreams. ⚡",
     }
 
     -- Apply theme highlights
