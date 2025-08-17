@@ -19,6 +19,7 @@ Built while learning Neovim on **Windows 11 terminal**, using [lazy.nvim](https:
   | `<leader>ex` | File Explorer | Open file explorer (netrw by default) |
   | `<leader>ct` | Theme | Switch to **Chai** theme   |
   | `<leader>tt` | Theme | Switch to **TokyoNight**   |
+  | `<leader>sk` | ShowKeys | Show key mappings   |
 
 
   ### Git Blame

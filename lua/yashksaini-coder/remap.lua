@@ -11,16 +11,16 @@ vim.keymap.set("n", "<leader>lx", "<cmd>Lazy clean<CR>", { desc = "Remove unused
 
 -- 🔎 Git Blame Keymaps
 	-- Toggle inline blame annotations
-vim.keymap.set("n", "<leader>gb", ":GitBlameToggle<CR>", { desc = "Toggle Git Blame" })
+vim.keymap.set("n", "<leader>gb", "<cmd>GitBlameToggle<CR>", { desc = "Toggle Git Blame" })
 
 	-- Copy commit SHA of current line
-vim.keymap.set("n", "<leader>gc", ":GitBlameCopySHA<CR>", { desc = "Copy Git Blame SHA" })
+vim.keymap.set("n", "<leader>gc", "<cmd>GitBlameCopySHA<CR>", { desc = "Copy Git Blame SHA" })
 
 	-- Copy commit URL (if remote origin is set, e.g. GitHub)
-vim.keymap.set("n", "<leader>gu", ":GitBlameCopyCommitURL<CR>", { desc = "Copy Git Blame URL" })
+vim.keymap.set("n", "<leader>gu", "<cmd>GitBlameCopyCommitURL<CR>", { desc = "Copy Git Blame URL" })
 
 	-- Open commit in browser (GitHub/GitLab/etc.)
-vim.keymap.set("n", "<leader>go", ":GitBlameOpenCommitURL<CR>", { desc = "Open Commit in Browser" })
+vim.keymap.set("n", "<leader>go", "<cmd>GitBlameOpenCommitURL<CR>", { desc = "Open Commit in Browser" })
 
 
 -- Switching themes keymaps
@@ -39,3 +39,7 @@ vim.keymap.set("n", "<leader>tt", function()
   vim.cmd("colorscheme tokyonight")
 end, { desc = "Switch to TokyoNight theme" })
 
+
+-- ShowKeys Toggle keymap
+
+vim.keymap.set("n", "<leader>sk", "<cmd>ShowkeysToggle<CR>", { desc = "Toggle ShowKeys" })
