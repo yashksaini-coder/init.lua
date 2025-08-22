@@ -14,7 +14,7 @@ vim.keymap.set("n", "<leader>lx", "<cmd>Lazy clean<CR>", { desc = "Remove unused
 vim.keymap.set("n", "<leader>gb", "<cmd>GitBlameToggle<CR>", { desc = "Toggle Git Blame" })
 
 	-- Copy commit SHA of current line
-vim.keymap.set("n", "<leader>gc", "<cmd>GitBlameCopySHA<CR>", { desc = "Copy Git Blame SHA" })
+    -- vim.keymap.set("n", "<leader>gc", "<cmd>GitBlameCopySHA<CR>", { desc = "Copy Git Blame SHA" })
 
 	-- Copy commit URL (if remote origin is set, e.g. GitHub)
 vim.keymap.set("n", "<leader>gu", "<cmd>GitBlameCopyCommitURL<CR>", { desc = "Copy Git Blame URL" })
